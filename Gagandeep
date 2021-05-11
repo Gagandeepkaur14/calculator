@@ -1,0 +1,57 @@
+Class main{
+
+Public static void main(String[] args)
+
+Char operator;
+Double operand1, operand2, result;
+
+//create object
+
+Scanner input = new Scanner(System.in);
+
+//enter first number
+
+System.out.println(“Select operand”);
+Operand1= input.nextDouble();
+
+//enetr second number
+
+System.out.println(“second operand”);
+Operand2 = input.nextDouble();
+
+//select operator
+System.out.println(“select operator”);
+Operator = input.next().charAt(0);
+
+switch(operator){
+
+case ‘+’ :
+result = operand1 + operand2;
+System.out.println(operand1 + “ + “ + operand2 + “ = “ + result);
+break;
+
+
+ case ‘-‘ :
+result = operand1 - operand2;
+System.out.println(operand1 + “ - “ + operand2  + “ = “ + result);
+break;
+ 
+case’*’ :
+result = operand1 * operand2;
+System.out.println(operand1 + “ * “ + operand2  +” = “ +result);
+break;
+
+case ‘/‘ :
+result = operand1/operrand2;
+System.out.println(operand1 + “ / “ + operand2 +” =  +result);
+break;
+
+default:
+System.out.println(“invalid operator”);
+break;
+
+}
+
+Input.close;
+}
+}
